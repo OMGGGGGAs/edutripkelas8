@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTrip - Subjects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            animation: fadeIn 1s ease-in-out;
+            background: url('background.jpg') no-repeat center center/cover;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .subject-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .subject-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .navbar a {
+            transition: color 0.3s ease-in-out;
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        .navbar a:hover {
+            color: #f39c12;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .subjects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>EduTrip</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="subjects.html">Explore Subjects</a></li>
+                    <li><a href="ips.html">IPS</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Explore Subjects</h2>
+            <p>Discover various subjects and enhance your learning experience with our exciting educational trips.</p>
+        </div>
+    </section>
+    <section class="subjects">
+        <div class="subject-card">
+            <h3><a href="ips.html">IPS</a></h3>
+            <p>Explore the past and visit historical sites around the world.</p>
+        </div>
+        <div class="subject-card">
+            <h3>Mandarin</h3>
+            <p>Meet my buddy from Taiwan!</p>
+        </div>
+        <div class="subject-card">
+            <h3>English</h3>
+            <p>Getting Lost in the Magic of Jiufen Old Street</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 EduTrip. All rights reserved.</p>
+    </footer>
+</body>
+</html>

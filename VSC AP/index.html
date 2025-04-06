@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTrip Sean 8G/03 - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Background with a calming image */
+        body {
+            overflow-x: hidden;
+            background: url("pexels-timo-volz-837240-1717862.jpg") no-repeat center center/cover;
+            height: 100vh;
+        }
+
+        /* Dark overlay for better text contrast */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Soft overlay */
+            z-index: -1;
+        }
+
+        /* Transparent navbar */
+        .navbar {
+            background: rgba(255, 255, 255, 0.1); /* Light transparency */
+            backdrop-filter: blur(10px); /* Blur effect */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        /* Transparent footer */
+        .footer {
+            background: rgba(255, 255, 255, 0.1); /* Light transparency */
+            backdrop-filter: blur(10px); /* Blur effect */
+            padding: 1rem;
+            text-align: center;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fadeIn { animation: fadeIn 1.5s ease-out forwards; }
+    </style>
+</head>
+<body class="relative text-white">
+    <div class="overlay"></div>
+
+    <!-- Transparent Navbar -->
+    <nav class="navbar">
+        <h1 class="text-2xl font-bold text-white">EduTrip</h1>
+        <div class="space-x-4">
+            <a href="index.html" class="text-white hover:text-blue-300">Home🏠</a>
+            <a href="ips.html" class="text-white hover:text-blue-300">IPS📖</a>
+            <a href="inggris.html" class="text-white hover:text-blue-300">English☕</a>
+            <a href="Indonesia.html" class="text-white hover:text-blue-300">B.Indonesia🍚</a>
+            <a href="PPKN.html" class="text-white hover:text-blue-300">PPKN🚂</a>
+            <a href="Mandarin.html" class="text-white hover:text-blue-300">Mandarin🏮</a>
+            <a href="Agama.html" class="text-white hover:text-blue-300">Agama⛪</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex flex-col items-center justify-center min-h-screen p-4 text-center animate-fadeIn">
+        <h1 class="text-5xl font-bold text-white">Welcome to My EduTrip Page!</h1>
+        <p class="text-lg text-gray-300 mt-4 max-w-xl">
+            Sean 8G/03 AP ICT
+        </p>
+
+        
+    </main>
+
+    <!-- Transparent Footer -->
+    <footer class="footer">
+        © 2025 EduTrip. All rights reserved.
+    </footer>
+</body>
+</html>
